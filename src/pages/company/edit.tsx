@@ -1,15 +1,23 @@
-import { Col, Form, Input, InputNumber, Row, Select } from 'antd'
-import { Edit, useForm } from '@refinedev/antd'
-import { UPDATE_COMPANY_MUTATION } from '@/graphql/mutations'
-import CustomAvatar from '@/components/custom-avatar';
-import { getNameInitials } from '@/utilities';
-import SelectOptionWithAvatar from '@/components/select-option-with-avatar';
-import { USERS_SELECT_QUERY } from '@/graphql/queries';
-import { UsersSelectQuery } from '@/graphql/types';
-import { GetFieldsFromList } from '@refinedev/nestjs-query';
-import { useSelect } from '@refinedev/core';
-import { businessTypeOptions, companySizeOptions, industryOptions } from '@/constants';
-import { CompanyContactsTable } from './contacts-table';
+import { Edit, useForm, useModalForm, useSelect } from "@refinedev/antd";
+import type {
+  GetFieldsFromList,
+} from "@refinedev/nestjs-query";
+
+import { Form, Input, InputNumber, Modal, Select } from "antd";
+
+import { USERS_SELECT_QUERY } from "@/graphql/queries";
+import type {
+  UsersSelectQuery,
+} from "@/graphql/types";
+import {UPDATE_COMPANY_MUTATION } from "@/graphql/mutations";
+import SelectOptionWithAvatar from "@/components/select-option-with-avatar";
+import CustomAvatar from "@/components/custom-avatar";
+import { getNameInitials } from "@/utilities";
+import { Col, Row } from "antd/lib";
+import { businessTypeOptions, companySizeOptions, industryOptions } from "@/constants";
+import { CompanyContactsTable } from "./contacts-table";
+
+
 
 const EditPage = () => {
     const {saveButtonProps,formProps,formLoading,queryResult}=useForm({
