@@ -89,4 +89,8 @@ export const CompanyCreateModal = () => {
     </Modal>
   );
 };
+<<<<<<< HEAD
 export default CompanyCreateModal;
+=======
+export default CompanyCreateModal;
+>>>>>>> f218713a714905d47302cf0c6bf992708ca13173
