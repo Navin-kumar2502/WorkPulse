@@ -9,7 +9,6 @@ import type { GetFieldsFromList } from "@refinedev/nestjs-query";
 import type { DragEndEvent } from "@dnd-kit/core";
 
 import type { TaskUpdateInput } from "@/graphql/schema.types";
-import type { TasksQuery, TaskStagesQuery } from "@/graphql/types";
 import { TASK_STAGES_QUERY, TASKS_QUERY } from "@/graphql/queries";
 import { UPDATE_TASK_STAGE_MUTATION } from "@/graphql/mutations";
 import { KanbanBoard, KanbanBoardContainer } from "@/components/tasks/kanban/board";
@@ -20,6 +19,7 @@ import { KanbanAddCardButton } from "@/components/tasks/kanban/add-card-button";
 import { KanbanColumnSkeleton, ProjectCardSkeleton } from "@/components";
 import React, { useEffect } from "react";
 import { useDocumentTitle } from "@refinedev/react-router-v6";
+import { TasksQuery, TaskStagesQuery } from "@/graphql/types";
 
 
 

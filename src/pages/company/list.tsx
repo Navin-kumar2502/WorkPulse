@@ -8,9 +8,9 @@ import { currencyNumber } from '@/utilities';
 import { Text } from '@/components/text';
 import {  type HttpError} from "@refinedev/core";
 import type { GetFieldsFromList } from "@refinedev/nestjs-query";
-import { CompaniesListQuery } from '@/graphql/types';
 import { useDocumentTitle } from "@refinedev/react-router-v6";
 import { useEffect } from 'react';
+import { CompaniesListQuery } from '@/graphql/types';
 
 
 type Company = GetFieldsFromList<CompaniesListQuery>;

@@ -6,13 +6,8 @@ import MDEditor from "@uiw/react-md-editor";
 import { Button, Form, Space } from "antd";
 
 import { Task } from "@/graphql/schema.types";
-import {
-  UpdateTaskMutation,
-  UpdateTaskMutationVariables,
-} from "@/graphql/types";
-
 import { UPDATE_TASK_MUTATION } from "@/graphql/mutations";
-
+import { UpdateTaskMutation, UpdateTaskMutationVariables } from "@/graphql/types";
 type Props = {
   initialValues: {
     description?: Task["description"];

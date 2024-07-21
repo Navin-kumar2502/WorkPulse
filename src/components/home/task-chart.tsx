@@ -10,7 +10,7 @@ import { Button, Card } from "antd";
 import { Text } from "@/components";
 import type { DashboardTasksChartQuery } from "@/graphql/types";
 import { DASHBOARD_TASKS_CHART_QUERY } from "./query";
-
+   
 const Pie = lazy(() => import("@ant-design/plots/es/components/pie"));
 
 export const DashboardTasksChart: React.FC = () => {

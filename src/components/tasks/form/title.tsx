@@ -6,13 +6,10 @@ import { GetFields, GetVariables } from "@refinedev/nestjs-query";
 
 import { Form, Skeleton } from "antd";
 import { Task } from "@/graphql/schema.types";
-import {
-  UpdateTaskMutation,
-  UpdateTaskMutationVariables,
-} from "@/graphql/types";
 
 import { UPDATE_TASK_MUTATION } from "@/graphql/mutations";
 import { Text } from "@/components";
+import { UpdateTaskMutation, UpdateTaskMutationVariables } from "@/graphql/types";
 
 const TitleInput = ({
   value,
@@ -60,7 +57,7 @@ export const TitleForm = ({ initialValues, isLoading }: Props) => {
     HttpError,
     /**
      * Pick is a utility type from typescript that allows you to create a new type from an existing type by picking some properties from it.
-     * https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys
+     * https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys 
      *
      * Pick<Type, Keys>
      * Type -> the type from which we want to pick the properties
