@@ -7,8 +7,8 @@ import ProjectCardSkeleton from "./skeleton/skeleton/project-card";
 import LatestActivitiesSkeleton from "./skeleton/skeleton/latest-activities";
 import DashboardTotalCountCard from "./home/total-count-card";
 import LatestActivities from "./home/latest-activities";
-export {UpcomingEvents,DealsChart,UpcomingEventsSkeleton,AccordionHeaderSkeleton,KanbanColumnSkeleton,ProjectCardSkeleton,LatestActivitiesSkeleton,DashboardTotalCountCard,LatestActivities};
-
+import DashboardTasksChart  from "./home/task-chart";
+export {UpcomingEvents,DealsChart,UpcomingEventsSkeleton,AccordionHeaderSkeleton,KanbanColumnSkeleton,ProjectCardSkeleton,LatestActivitiesSkeleton,DashboardTotalCountCard,LatestActivities,DashboardTasksChart};
 
 export * from './tags/user-tag';
 export * from './text';

@@ -1,4 +1,4 @@
-import { DashboardTotalCountCard,DealsChart, LatestActivities, UpcomingEvents } from '@/components'
+import { DashboardTasksChart, DashboardTotalCountCard,DealsChart, LatestActivities, UpcomingEvents } from '@/components'
 import { DASHBOARD_TOTAL_COUNTS_QUERY } from '@/graphql/queries'
 import { DashboardTotalCountsQuery } from '@/graphql/types'
 import { useCustom } from '@refinedev/core'
@@ -76,6 +76,22 @@ export const Home = () => {
       >
         <Col
         xs={24}
+        sm={24}
+        xl={8}
+        style={{
+          height:'460px'
+        }}
+        >
+          <DashboardTasksChart/>
+        </Col>
+        <Col
+        xs={24}
+        sm={24}
+        xl={16}
+        style={{
+          height:'500px',
+          overflowY:'auto'
+        }}
         >
           <LatestActivities/>
         </Col>
