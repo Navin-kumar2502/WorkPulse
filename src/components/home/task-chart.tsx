@@ -102,7 +102,7 @@ export const DashboardTasksChart: React.FC = () => {
       }
       extra={
         <Button onClick={() => list("tasks")} icon={<RightCircleOutlined />}>
-          See kanban board
+          Visit Tasks
         </Button>
       }
     >
